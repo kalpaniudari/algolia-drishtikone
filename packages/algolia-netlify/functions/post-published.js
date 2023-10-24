@@ -4,7 +4,7 @@ const transforms = require('@tryghost/algolia-fragmenter');
 exports.handler = async (event) => {
     const {key} = event.queryStringParameters;
 
-    TODO: Deprecate this in the future and make the key mandatory
+    // TODO: Deprecate this in the future and make the key mandatory
     if (key && key !== process.env.NETLIFY_KEY) {
         return {
             statusCode: 401,
